@@ -15,6 +15,7 @@ class Form extends Component {
   }
   render() {
     var value = this.state.value;
+    console.log(this.props);
     return (
       <div className="form">
         <form>
