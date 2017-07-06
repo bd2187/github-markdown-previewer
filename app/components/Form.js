@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Preview from './Preview';
 
 class Form extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class Form extends Component {
             onChange={this.handleTextArea}>
           </textarea>
         </form>
+        <Preview previewText={value}/>
       </div>
     )
   }
