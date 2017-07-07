@@ -10,8 +10,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    onChange: function() {
-      return dispatch(changeInput)
+    onChange: function(value) {
+      return dispatch(changeInput(value))
     }
   }
 }
