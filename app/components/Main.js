@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Input from '../containers/Input';
-import MarkupPreview from '../containers/MarkupPreview';
+import MarkdownPreview from '../containers/MarkdownPreview';
 
 
 class Main extends Component {
@@ -8,7 +8,7 @@ class Main extends Component {
     return (
       <div className="main">
         <Input />
-        <MarkupPreview />
+        <MarkdownPreview />
       </div>
     );
   }

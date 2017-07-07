@@ -8,8 +8,8 @@ function mapStateToProps(state) {
   }
 }
 
-const MarkupPreview = connect(
+const MarkdownPreview = connect(
   mapStateToProps
 )(Preview);
 
-export default MarkupPreview;
+export default MarkdownPreview;

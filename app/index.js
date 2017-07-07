@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './index.css';
-import App from './components/App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { changeInput } from './actions/actions';
 import rootReducer from './reducers/reducers';
+import App from './components/App';
+import './styles/css/main.css';
 
-const foo = `
+const defaultInput = `
 Heading
 =======
 
@@ -43,7 +43,7 @@ Spain.
  *[Herman Fassett](https://freecodecamp.com/hermanfassett)*`;
 
 const defaultState = {
-  input: foo
+  input: defaultInput
 }
 
 let store = createStore(rootReducer, defaultState);
