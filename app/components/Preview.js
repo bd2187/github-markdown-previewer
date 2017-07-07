@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import marked from 'marked';
+
+function createMarkup(markup)  {
+  return {
+    __html: marked(markup)
+  };
+}
 
 function Preview({preview}) {
-  return(
-    <p>
-      {preview}
-    </p>
+  return (
+    <div
+      className="preview"
+      dangerouslySetInnerHTML={createMarkup(preview)}>
+    </div>
   );
 }
 
