@@ -1,7 +1,40 @@
+@import "normalize";
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: red;
+  background: linear-gradient(-60deg, #F2FFFF, #F2FFCF);
+}
+
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.12em;
+  color: #3F42B2;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 25em;
+  max-height: 35em;
+
+  color: lightgrey;
+  transition: color .5s;
+  font-weight: lighter;
+
+  &:hover {
+    color: #323333;
+  }
+}
+
+.preview {
+  color: #323333;
 }

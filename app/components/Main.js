@@ -7,6 +7,7 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
+        <h1 className="title">Markdown Previewer</h1>
         <Input />
         <MarkdownPreview />
       </div>
