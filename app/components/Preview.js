@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class Preview extends Component {
+function Preview({preview}) {
+  return(
+    <p>
+      {preview}
+    </p>
+  );
+}
 
-  render() {
-    // console.log(this.props);
-    return (
-      <div className="preview">
-        <p>
-          {this.props.previewText}
-        </p>
-      </div>
-    )
-  }
+Preview.propTypes = {
+  preview: PropTypes.string.isRequired
 }
 
 export default Preview;
