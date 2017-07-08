@@ -6,7 +6,7 @@ import MarkdownPreview from '../containers/MarkdownPreview';
 class Main extends Component {
   render() {
     return (
-      <div className="main">
+      <div className="main clearfix">
         <h1 className="title">Markdown Previewer</h1>
         <Input />
         <MarkdownPreview />

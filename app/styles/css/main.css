@@ -416,20 +416,43 @@ ul {
 }
 
 body {
-  background: -webkit-linear-gradient(150deg, #F2FFFF, #F2FFCF);
-  background: -o-linear-gradient(150deg, #F2FFFF, #F2FFCF);
-  background: linear-gradient(-60deg, #F2FFFF, #F2FFCF);
+  background: #F2FFFF;
+}
+
+a {
+  color: #3F42B2;
 }
 
 .main {
   width: 90%;
+  max-width: 78em;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 660px) {
+  .main .form,
+  .main .preview {
+    width: 50%;
+    float: left;
+  }
 }
 
 .title {
   text-align: center;
-  font-size: 2.12em;
   color: #3F42B2;
+  font-size: 2.5em;
+  font-family: 'Dancing Script', cursive;
+}
+
+@media screen and (min-width: 660px) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+textarea,
+.preview {
+  font-family: 'Roboto', sans-serif;
 }
 
 textarea {
@@ -437,6 +460,7 @@ textarea {
   max-width: 100%;
   height: 25em;
   max-height: 35em;
+  padding: .5em;
   color: lightgrey;
   -webkit-transition: color .5s;
   -o-transition: color .5s;
@@ -444,10 +468,30 @@ textarea {
   font-weight: lighter;
 }
 
-textarea:hover {
+textarea:hover, textarea:focus {
   color: #323333;
+}
+
+@media screen and (min-width: 660px) {
+  textarea {
+    height: 30em;
+    max-height: 40em;
+  }
 }
 
 .preview {
   color: #323333;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 660px) {
+  .preview {
+    padding-left: 2em;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }

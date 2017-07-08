@@ -9,8 +9,6 @@ function input(state = '', action) {
   }
 }
 
-const rootReducer = combineReducers({
-  input
-});
+const rootReducer = combineReducers({input});
 
 export default rootReducer;
