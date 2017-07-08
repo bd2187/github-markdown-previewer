@@ -12,8 +12,8 @@ function Preview({preview}) {
   return (
     <div
       className="preview"
-      dangerouslySetInnerHTML={createMarkup(preview)}>
-    </div>
+      dangerouslySetInnerHTML={createMarkup(preview)}/>
+
   );
 }
 
