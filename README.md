@@ -1,4 +1,4 @@
-<h1>Netflix Clone</h1>
+<h1>GitHub-Markdown-Previewer</h1>
 <a href="https://markdown-previewer-436ba.firebaseapp.com/">
   Demo
 </a>
