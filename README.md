@@ -15,7 +15,7 @@
 
 <h2>Users Can:</h2>
 <ul>
-  <li>type GitHub-flavored Markdown into the text area</li>
+  <li>Type GitHub-flavored Markdown into the text area</li>
   <li>See a preview of the output of their markdown that is updated as they type</li>
 </ul>
 
